@@ -1,0 +1,20 @@
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@media (max-width:600px) {
+    .tabs{
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+        align-items: center;
+    }
+    .btn-container{
+        width: 300px;
+       
+    }
+    
+}

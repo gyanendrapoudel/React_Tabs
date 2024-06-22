@@ -5,7 +5,7 @@ const Tab = ({id, company,order, title, dates, duties}) => {
         <p className="mb-3 fs-3 " style={{ fontWeight: '500px' }}>
           {title}
         </p>
-        <span>
+        <span className="">
           <button className="btn btn-secondary btn-sm mb-3 px-3">{company}</button>
         </span>
         <p className="mb-4 fs-5">{dates}</p>

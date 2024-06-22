@@ -1,3 +1,4 @@
+import './App.css'
 import { useEffect, useState } from "react";
 import Tabs from "./components/Tabs"; 
 const tabsUrl = 'https://www.course-api.com/react-tabs-project'

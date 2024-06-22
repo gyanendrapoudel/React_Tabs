@@ -9,11 +9,19 @@ const Tabs = ({ tabs }) => {
      }
     console.log(selectedTab)
   return (
-    <div className="container mt-5 d-flex justify-content-evenly">
+    <div className=" tabs mt-5">
       <div className="list-group">
         {tabs.map((tab) => {
           return (
-            <button key={tab.id} onClick={() => handleClick(tab.id)} className={tab.id===selectedTab.id?"list-group-item text-success":"list-group-item"} >
+            <button
+              key={tab.id}
+              onClick={() => handleClick(tab.id)}
+              className={
+                tab.id === selectedTab.id
+                  ? 'list-group-item btn-container text-success '
+                  : 'list-group-item btn-container'
+              }
+            >
               {tab.company}
             </button>
           )
