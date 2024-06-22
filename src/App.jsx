@@ -18,7 +18,7 @@ const App = () => {
       console.log(error)
     }
   }
-
+ 
   useEffect(()=>{
     fetchTabs()
   },[])
@@ -28,7 +28,7 @@ const App = () => {
  }
   return (
     <div>
-      <Tabs tabs ={tabs}/>
+      <Tabs tabs={tabs}  />
     </div>
   )
 }
