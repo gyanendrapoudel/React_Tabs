@@ -10,7 +10,7 @@ const Tabs = ({ tabs }) => {
     console.log(selectedTab)
   return (
     <div className=" tabs mt-5">
-      <div className="list-group">
+      <div className="list-group ">
         {tabs.map((tab) => {
           return (
             <button
