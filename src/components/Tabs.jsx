@@ -13,7 +13,7 @@ const Tabs = ({ tabs }) => {
       <div className="list-group">
         {tabs.map((tab) => {
           return (
-            <button key={tab.id} onClick={() => handleClick(tab.id)} className="list-group-item">
+            <button key={tab.id} onClick={() => handleClick(tab.id)} className={tab.id===selectedTab.id?"list-group-item text-success":"list-group-item"} >
               {tab.company}
             </button>
           )
